@@ -23,7 +23,7 @@ class NetworkDataSource: RemoteDataSourceProtocol {
         }
         
         URLSession.shared.dataTask(with: url) { (data, response, error) in
-            if let error = error {
+            if error != nil {
                 print("URLSession Faild")
                 return
             }

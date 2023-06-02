@@ -20,7 +20,7 @@ class Provider : ProviderVMProtocol {
     let catsRemote = NetworkDataSource()
 
     func provideCatsViewModel() -> CatViewModel{
-        var useCase = CatsUseCase(catDefaultDataSourceProtocol: getCatRepository())
+        let useCase = CatsUseCase(catDefaultDataSourceProtocol: getCatRepository())
         return CatViewModel(catUseCase: useCase)
     }
     private func getCatRepository() -> DefaultDataSourceProtocol{

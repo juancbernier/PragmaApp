@@ -22,9 +22,14 @@ class CatViewModel : ObservableObject{
     }
     
     func loadCats() {
-        catUseCase.getCats { cats in
-            self.cats = cats
+        DispatchQueue.global().async { [self] in
+            catUseCase.getCats { cats in
+                DispatchQueue.main.async {
+                    self.cats = cats
+                }
+            } 
         }
+  
     }
     
 }
