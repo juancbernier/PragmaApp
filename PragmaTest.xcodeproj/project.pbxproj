@@ -51,8 +51,11 @@
 		F58AB6562A2A910E00F7101E /* PragmaTest */ = {
 			isa = PBXGroup;
 			children = (
-				F58AB6572A2A910E00F7101E /* PragmaTestApp.swift */,
-				F58AB6592A2A910E00F7101E /* ContentView.swift */,
+				F58AB6652A2A954600F7101E /* Application */,
+				F58AB6672A2A955A00F7101E /* UI */,
+				F58AB6692A2A956900F7101E /* Domain */,
+				F58AB66A2A2A956E00F7101E /* Data */,
+				F58AB66F2A2A95C700F7101E /* DI */,
 				F58AB65B2A2A911000F7101E /* Assets.xcassets */,
 				F58AB65D2A2A911000F7101E /* Preview Content */,
 			);
@@ -65,6 +68,91 @@
 				F58AB65E2A2A911000F7101E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F58AB6652A2A954600F7101E /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				F58AB6572A2A910E00F7101E /* PragmaTestApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		F58AB6662A2A954F00F7101E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F58AB6592A2A910E00F7101E /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F58AB6672A2A955A00F7101E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				F58AB6662A2A954F00F7101E /* View */,
+				F58AB6682A2A955E00F7101E /* ViewModel */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		F58AB6682A2A955E00F7101E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		F58AB6692A2A956900F7101E /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				F58AB66B2A2A958200F7101E /* UseCase */,
+				F58AB66C2A2A958A00F7101E /* Entities */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		F58AB66A2A2A956E00F7101E /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				F58AB66E2A2A95A600F7101E /* Repository */,
+				F58AB66D2A2A959D00F7101E /* Network */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		F58AB66B2A2A958200F7101E /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		F58AB66C2A2A958A00F7101E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		F58AB66D2A2A959D00F7101E /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		F58AB66E2A2A95A600F7101E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		F58AB66F2A2A95C700F7101E /* DI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
